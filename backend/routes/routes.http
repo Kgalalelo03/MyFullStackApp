@@ -1,0 +1,35 @@
+### Add a new employee
+POST http://localhost:5000/api/employees/add
+Content-Type: application/json
+
+{
+  "name": "John",
+  "surname": "Doe",
+  "gender": "Male",
+  "department": "Engineering",
+  "salary": 50000
+}
+
+### Get all employees
+GET http://localhost:5000/api/employees/view
+
+### Get employees by department (Engineering)
+# You'll need to implement a route to get employees by department
+# Example: GET http://localhost:5000/api/employees/department/engineering
+
+### Update an existing employee
+# Replace {id} with the actual employee ID you want to update
+PUT http://localhost:5000/api/employees/{id}
+Content-Type: application/json
+
+{
+  "name": "Alice",
+  "surname": "Johnson",
+  "gender": "Female",
+  "department": "Marketing",
+  "salary": 75000
+}
+
+### Delete an employee
+# Replace {id} with the actual employee ID you want to delete
+DELETE http://localhost:5000/api/employees/{id}
